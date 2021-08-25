@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART-Light.eot');
+    src: local('NEXT ART Light'), local('NEXTART-Light'),
+        url('../fonts/NEXTART/NEXTART-Light.eot') format('embedded-opentype'),
+        url('../fonts/NEXTART/NEXTART-Lightt.woff2') format('woff2'),
+        url('../fonts/NEXTART/NEXTART-Light.woff') format('woff'),
+        url('../fonts/NEXTART/NEXTART-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART-Bold.eot');
+    src: local('NEXT ART Bold'), local('NEXTART-Bold'),
+        url('../fonts/NEXTART/NEXTART-Bold.eot') format('embedded-opentype'),
+        url('../fonts/NEXTART/NEXTART-Bold.woff2') format('woff2'),
+        url('../fonts/NEXTART/NEXTART-Bold.woff') format('woff'),
+        url('../fonts/NEXTART/NEXTART-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART-SemiBold.eot');
+    src: local('NEXT ART SemiBold'), local('NEXTART-SemiBold'),
+        url('../fonts/NEXTART/NEXTART-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART.eot');
+    src: local('NEXT ART'), local('NEXTART'),
+        url('../fonts/NEXTART/NEXTART.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('NEXTART-Heavy.eot');
+    src: local('NEXT ART Heavy'), local('NEXTART-Heavy'),
+        url('../fonts/NEXTART/NEXTART-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}

@@ -1,0 +1,527 @@
+body {
+  background-color: rgb(82, 82, 82);
+}
+
+.to-do {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 480px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.to-do__header {
+  height: 190px;
+  padding: 20px;
+  background: radial-gradient(#7d77b3, #20139b);
+  color: #fff;
+}
+.to-do__header-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.to-do__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.to-do__descr {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.to-do__sum {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  font-size: 30px;
+}
+
+.balance {
+  margin: 0 10px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance__descr {
+  font-size: 20px;
+  color: white;
+}
+.balance__money {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #19be03;
+  border-bottom: 1px solid #19be03;
+}
+.balance__money_red {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.tasks {
+  position: relative;
+  background-color: #cacaca;
+  border-radius: 30px 30px 0 0;
+  margin-top: -30px;
+  padding: 15px 6px 36px 6px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 350px;
+  overflow-y: scroll;
+}
+.tasks::-webkit-scrollbar {
+  width: 0;
+}
+.tasks__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks__title {
+  font-size: 26px;
+}
+
+.tasks__tabs {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 8px 0 0 0;
+  height: 38px;
+}
+
+.tab {
+  font-size: 17px;
+  margin-right: 14px;
+  border-bottom: 1px solid #000;
+  padding: 8px;
+  cursor: pointer;
+  transition: border-radius 0.9s ease, background-color 0.7s 0.1s;
+}
+
+.tab-active {
+  background-color: #e1ffa9;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.tasks__list {
+  margin-top: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  letter-spacing: -1px;
+  display: none;
+}
+.tasks__list-active {
+  display: block;
+}
+
+.task {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 5px;
+  transition: all 0.7s ease;
+  background-color: #e1ffa988;
+}
+
+.task:hover {
+  background-color: #e1ffa9;
+}
+
+.task__text {
+  display: flex;
+  align-items: center;
+}
+
+.task__name {
+  width: 190px;
+  white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;    
+}
+.task__date {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.task__icons {
+  display: flex;
+  width: 42px;
+  justify-content: space-between;
+}
+
+.task__icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.task__icons i:hover {
+  color: red;
+}
+.add {
+  margin-top: -34px;
+  border-top: 2px solid black;
+  z-index: 20;
+  transition: opacity 1.5s ease;
+}
+.opacity {
+  opacity: 0;
+}
+.form {
+  display: flex;
+}
+.input, select {
+  padding: 0 6px;
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  color: black;
+  background-color: #eeeeee;
+}
+.form .input, select {
+  border-right: 1px solid black;
+}
+.radius {
+  border-radius: 6px;
+}
+.input {
+  height: 34px;
+}
+input::-webkit-input-placeholder { color: black; }
+input:-moz-placeholder { color: black; }
+input[name="name"] {
+  width: 40%;
+}
+input[name="date"] {
+  width: 36%;
+}
+input[name="money"] {
+  width: calc(24% - 34px);
+}
+.form button {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.button i {
+  font-size: 26px;
+}
+.hide {
+  display: none;
+}
+.button-green {
+  color: green;
+}
+.button-red {
+  color: red;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -10;
+  transition: opacity 1s ease;
+}
+.overlay-active {
+  opacity: .7;
+  z-index: 10;
+}
+.red {
+  background-color: #ff5252;
+}
+.green {
+  background-color: #75ff75;
+}
+
+/* 
+// const input = document.querySelector('#input');
+// input.oninput = function() {
+//     let value = this.value.trim();
+
+//     let list = document.querySelectorAll('ol li');
+
+//     list.forEach(item => {
+//         if (!item.innerText.toLowerCase().includes(value.toLowerCase())) {
+//             item.classList.add('hide');
+//         } else {
+//             item.classList.remove('hide');
+//         }
+//     });
+    
+// };
+
+const tabsConteiner = document.querySelector('.tasks__tabs'); // Таб-контейнер
+const tabs = document.querySelectorAll('.tab'); // Табы
+const listsTasks = document.querySelectorAll('.tasks__list'); // Все списки задач
+const buttonAddElement = document.querySelector('.button:not(.hide)'); // Кнопка - добавить элемент
+const buttonChange = document.querySelectorAll('.js-button'); // Кнопки - сохранить, отменить
+const inputName = document.querySelector('.form input[name = "name"]'); // Поля ввода
+const inputDate = document.querySelector('.form input[name = "date"]'); 
+const inputMoney = document.querySelector('.form input[name = "money"]'); 
+const overlay = document.querySelector('.overlay');
+const footer = document.querySelector('.add'); // Подвал
+
+let balanceItems = document.querySelectorAll('.balance__money');
+let balanceSum = document.querySelector('.to-do__sum');
+
+let selectValue = document.querySelector('select'); // Выбор валюты
+
+// Local Storage
+let toDO = [];
+if (localStorage.todo) {
+    toDO = JSON.parse(localStorage.getItem("todo"));
+}
+showToDoLocal();
+clickedButton();
+balance();
+
+tabsConteiner.addEventListener('click', event => { // Табы
+    tabs.forEach((elem, i) => {
+        if (event.target == elem) {
+            removeClass(tabs, 'tab-active');
+            removeClass(listsTasks, 'tasks__list-active');
+            addClass(listsTasks[i], 'tasks__list-active');
+            addClass(elem, 'tab-active');
+            // Для второго таба
+            removeClass(footer, 'opacity');
+            if (i == 2) { addClass(footer, 'opacity'); }
+        }
+    });
+});
+
+function clickedButton() { // Клик по кнопке "Добавить элемент"
+    buttonAddElement.addEventListener('click', e => {
+        if (inputName.value && inputDate.value && inputMoney.value) {
+            e.preventDefault();
+            const listTaskActive = document.querySelector('.tasks__list-active');
+            let temp = {};
+            let index;
+
+            listsTasks.forEach((item, i) => {
+                if (listTaskActive == item) {
+                    index = i;
+                }
+            });
+
+            addHTML(inputName.value, inputDate.value, inputMoney.value, listTaskActive);
+            addHTML(inputName.value, inputDate.value, inputMoney.value, listsTasks[2], index);
+            addClass(buttonChange);
+            
+            temp.indexList = index;
+            temp.name = `${inputName.value}`;
+            temp.date = `${inputDate.value}`;
+            temp.sum = `${inputMoney.value}`;
+
+            toDO.push(temp);
+            localStorage.setItem("todo", JSON.stringify(toDO));
+            balance();
+
+            inputClean();
+        }
+    });
+}
+
+function addHTML(value1, value2, value3, tasksList, index) { // Добавление разметки
+    let div = document.createElement('div');
+    div.classList.add('task');
+    if (index == 0 && tasksList == listsTasks[2]) {
+        div.classList.add('green');
+    } else if (index == 1 && tasksList == listsTasks[2]) {
+        div.classList.add('red');
+    }
+    let date = splitAndJoin(value2, '-', '.');
+    addElement(div, value1, date, value3);
+    if (tasksList != listsTasks[2]) {
+    div.insertAdjacentHTML('beforeend',
+        `<div class="task__icons">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </div>`);
+    }
+        
+    tasksList.appendChild(div);
+    div.addEventListener('click', e => {
+        followIcons(div, e);
+    });
+}
+
+function addElement(element, value1, value2, value3) { // Добавить элемент
+    element.innerHTML = `
+    <div class="task__text">
+        <div class="task__name">${value1}</div>
+        <div class="task__date">${value2}</div>
+        <div class="task__sum">${value3}$</div>
+    </div>`;
+}
+
+
+function followIcons(divParent, e) { //  Обработка клика по иконкам
+    const tasksContent = document.querySelector('.tasks'); // Контент панели
+    const iconsChange = divParent.querySelector('.fa-pencil'); // Иконка "Изменить" в активном элементе
+    const iconsRemove = divParent.querySelector('.fa-trash-o'); // Иконка "Удалить" в активном элементе
+    const iconsAll = document.querySelector('.tasks__list-active').querySelectorAll('.fa-trash-o'); // Все иконки "Удалить" в активном списке
+    let name = divParent.querySelector('.task__name');
+    let date = divParent.querySelector('.task__date');
+    let sum =  divParent.querySelector('.task__sum');
+    let index;
+    let indexItem;
+
+    e.stopPropagation();
+
+    listsTasks.forEach((item, i) => { // index активного таба
+        if (divParent.parentElement == item) {
+            index = i;
+        }
+    });
+    iconsAll.forEach((item, i) => { // index выбранного элемента
+        if (item == iconsRemove) {
+            indexItem = i;
+        }
+    });
+    if (iconsRemove == e.target) {// Клик по кнопке "Удалить"
+        divParent.remove();
+        changeLocal(index, indexItem, 'remove');
+        balance();
+    }
+    if (iconsChange == e.target) { // Клик по кнопке "Изменить"
+        inputName.value = name.innerHTML; // Записать данные в Input-ы
+        inputDate.value = splitAndJoin(date.innerHTML, '.', '-');
+        inputMoney.value = sum.innerHTML.slice(0, -1);
+        removeClass(buttonChange, 'hide');
+        overlay.style.height = `${tasksContent.scrollHeight}px`;
+        overlay.classList.add('overlay-active');
+        
+        document.body.addEventListener('click', clickWrapper); // Обработка клика при overlay
+    } 
+    function clickWrapper(e) {
+        e.preventDefault();
+        if (e.target == buttonChange[0].firstChild) { // Если нажата кнопка "Сохранить"
+            name.innerHTML =  inputName.value;
+            date.innerHTML = splitAndJoin(inputDate.value, '-', '.');
+            sum.innerHTML =  `${inputMoney.value}$`;
+            changeLocal(index, indexItem, 'change', inputName.value, inputDate.value, inputMoney.value);
+            removeEvent();
+            inputClean();
+            balance();
+        } else if (e.target != inputName && e.target != inputDate && e.target != inputMoney) {
+            removeEvent();
+            inputClean();
+        }
+        
+    }
+    function removeEvent() { // Удалить обработчик
+        document.body.removeEventListener('click', clickWrapper);
+        addClass(buttonChange, 'hide');
+        overlay.classList.remove('overlay-active');
+    }
+}
+
+function changeLocal(index, indexItem, operation, ...name) { // Работа с Local Storage и 2-ым табом
+    toDO = JSON.parse(localStorage.getItem("todo"));
+    
+    const taksInTaskAll = listsTasks[2].querySelectorAll('.task'); // Все задачи со 2-го таба
+    let count = 0; // Счётчик задач у активного таба
+    toDO.forEach((item, i) => {
+        if (item.indexList == index) { // Таб 1 или таб 2
+            if (count == indexItem) { // Индекс в БД = индекс элемента
+                if (operation == 'remove') {
+                    toDO.splice(i, 1); // Удалить из БД и со 2-го таба
+                    taksInTaskAll[i].remove();
+                }
+                if (operation == 'change') {
+                    toDO[i].name = name[0]; // Изменить в БД
+                    toDO[i].date = name[1];
+                    toDO[i].sum = name[2];
+                    addElement( taksInTaskAll[i], name[0], splitAndJoin(name[1], '-', '.'), name[2]); // Изменить у 2-го таба
+                }
+            }
+            count++;
+        }
+    });
+
+    localStorage.setItem("todo", JSON.stringify(toDO));
+}
+
+function showToDoLocal() { // Показ контента после перезагрузки
+    toDO.forEach((item, i) => {
+        if (item.indexList == 0) {
+            addHTML(item.name, item.date, item.sum, listsTasks[0]);
+        } else if (item.indexList == 1) {
+            addHTML(item.name, item.date, item.sum, listsTasks[1]);
+        }
+        addHTML(item.name, item.date, item.sum, listsTasks[2], item.indexList);
+    });
+}
+
+function balance() { // Отображение баланса актуального
+    let income = toDO.filter(item => item.indexList == 0).reduce((a, b) => ({sum: +a.sum + +b.sum}));
+    let expense = toDO.filter(item => item.indexList == 1).reduce((a, b) => ({sum: +a.sum + +b.sum}));
+
+    balanceItems[0].innerHTML = `${income.sum}$`;
+    balanceItems[1].innerHTML = `${expense.sum}$`;
+    balanceSum.innerHTML = `${income.sum - expense.sum}$`;
+}
+
+function selectCurrency() {
+    selectValue.addEventListener('change', () => {
+        if (selectValue.value == 'Рубль') {
+            console.log()
+        }
+    });
+}
+
+selectCurrency();
+
+function addClass(elements, classAdd) {
+    if (typeof elements[Symbol.iterator] === 'function') {
+        elements.forEach(item => {
+            item.classList.add(classAdd);
+        }); 
+    } else { elements.classList.add(classAdd); }
+    
+}
+
+function removeClass(elements, classRemove) {
+    if (typeof elements[Symbol.iterator] === 'function') {
+        elements.forEach(item => {
+            item.classList.remove(classRemove);
+        });
+    } else { elements.classList.remove(classRemove); }
+}
+
+function splitAndJoin(value, simv1, simv2) {
+    return value.split(simv1).reverse().join(simv2);
+}
+
+function inputClean() {
+    inputName.value = '';
+    inputDate.value = '';
+    inputMoney.value = '';
+} */

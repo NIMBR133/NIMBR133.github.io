@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курительный клуб</title>
+    <link rel="stylesheet" href="css/style_reset.css">
+    <link rel="stylesheet" type="text/css" href="slider/slick.css">  
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="home">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="img/logo/logo.svg" alt="Логотип компании">
+                </a>
+                <div class="header__wrapper">
+                    <a href="#" class="name-company">Дым&nbsp;Кудрявый</a>
+                    <div class="social-link">
+                        <a href="#">
+                            <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.174 10.997h1.114a.67.67 0 00.5-.24.955.955 0 00.147-.51s-.03-1.53.675-1.771c.675-.21 1.555 1.5 2.523 2.16.372.253.814.379 1.262.361h2.493c.176 0 1.262-.15.704-1.172-.058-.09-.352-.78-1.877-2.22-1.585-1.501-1.35-1.261.528-3.842 1.144-1.56 1.584-2.521 1.467-2.941-.088-.33-.998-.27-.998-.27h-2.818a.604.604 0 00-.351.06.737.737 0 00-.235.3c-.287.78-.64 1.532-1.056 2.25-1.262 2.191-1.76 2.313-1.966 2.161-.469-.33-.352-1.26-.352-1.95 0-2.131.323-3.002-.616-3.242a4.042 4.042 0 00-1.32-.12c-.998 0-1.848 0-2.347.24-.323.15-.558.51-.41.54.315.033.607.184.82.422.293.39.293 1.32.293 1.32s.176 2.492-.381 2.792c-.382.21-.91-.21-2.025-2.19a16.086 16.086 0 01-.997-2.132.98.98 0 00-.235-.33.795.795 0 00-.44-.18H.606S.197.463.05.703a.611.611 0 000 .48s2.113 5.042 4.49 7.563c2.17 2.431 4.635 2.251 4.635 2.251z" fill="#C8CDD8"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.858 0h10.909c.568 0 1.051.212 1.449.636.398.425.597.94.597 1.546v11.636c0 .606-.2 1.121-.597 1.546-.398.424-.88.636-1.449.636H2.858a1.912 1.912 0 01-1.449-.636c-.398-.425-.597-.94-.597-1.546V2.182c0-.606.2-1.121.597-1.546C1.807.212 2.29 0 2.858 0zm8.864 2.182v2.182h2.045V2.182h-2.045zM10.23 5.955a2.458 2.458 0 00-1.918-.864c-.767 0-1.42.288-1.96.864C5.841 6.5 5.585 7.182 5.585 8c0 .818.256 1.515.767 2.09.54.546 1.193.82 1.96.82.768 0 1.407-.274 1.918-.82.54-.575.81-1.272.81-2.09 0-.818-.27-1.5-.81-2.045zm-8.054.59v7.273c0 .485.227.728.682.728h10.909c.455 0 .682-.243.682-.728V6.545h-2.301c.17.485.255.97.255 1.455 0 1.212-.397 2.242-1.193 3.09-.795.85-1.761 1.274-2.898 1.274-1.136 0-2.102-.425-2.897-1.273C4.619 10.242 4.222 9.212 4.222 8c0-.485.085-.97.255-1.455h-2.3z" fill="#C8CDD8"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="9" height="16" fill="none">
+                                <path d="M6.453 3.05h1.922V0H6.101C3.36.125 2.797 1.775 2.75 3.5v1.525H.875V8H2.75v8h2.813V8h2.32l.445-2.975H5.563V4.1c-.008-.132.01-.264.05-.388.04-.125.105-.239.188-.337a.935.935 0 01.295-.233.881.881 0 01.357-.092z" fill="#C8CDD8"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#">О клубе</a></li>
+                            <li class="menu__item"><a href="#">Интерьер</a></li>
+                            <li class="menu__item"><a href="#">Меню</a></li>
+                            <li class="menu__item"><a href="#">Преимущества</a></li>
+                            <li class="menu__item"><a href="#">Новости</a></li>
+                            <li class="menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="social-link social-link_menu">
+                            <a href="#">
+                                <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.174 10.997h1.114a.67.67 0 00.5-.24.955.955 0 00.147-.51s-.03-1.53.675-1.771c.675-.21 1.555 1.5 2.523 2.16.372.253.814.379 1.262.361h2.493c.176 0 1.262-.15.704-1.172-.058-.09-.352-.78-1.877-2.22-1.585-1.501-1.35-1.261.528-3.842 1.144-1.56 1.584-2.521 1.467-2.941-.088-.33-.998-.27-.998-.27h-2.818a.604.604 0 00-.351.06.737.737 0 00-.235.3c-.287.78-.64 1.532-1.056 2.25-1.262 2.191-1.76 2.313-1.966 2.161-.469-.33-.352-1.26-.352-1.95 0-2.131.323-3.002-.616-3.242a4.042 4.042 0 00-1.32-.12c-.998 0-1.848 0-2.347.24-.323.15-.558.51-.41.54.315.033.607.184.82.422.293.39.293 1.32.293 1.32s.176 2.492-.381 2.792c-.382.21-.91-.21-2.025-2.19a16.086 16.086 0 01-.997-2.132.98.98 0 00-.235-.33.795.795 0 00-.44-.18H.606S.197.463.05.703a.611.611 0 000 .48s2.113 5.042 4.49 7.563c2.17 2.431 4.635 2.251 4.635 2.251z" fill="#C8CDD8"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.858 0h10.909c.568 0 1.051.212 1.449.636.398.425.597.94.597 1.546v11.636c0 .606-.2 1.121-.597 1.546-.398.424-.88.636-1.449.636H2.858a1.912 1.912 0 01-1.449-.636c-.398-.425-.597-.94-.597-1.546V2.182c0-.606.2-1.121.597-1.546C1.807.212 2.29 0 2.858 0zm8.864 2.182v2.182h2.045V2.182h-2.045zM10.23 5.955a2.458 2.458 0 00-1.918-.864c-.767 0-1.42.288-1.96.864C5.841 6.5 5.585 7.182 5.585 8c0 .818.256 1.515.767 2.09.54.546 1.193.82 1.96.82.768 0 1.407-.274 1.918-.82.54-.575.81-1.272.81-2.09 0-.818-.27-1.5-.81-2.045zm-8.054.59v7.273c0 .485.227.728.682.728h10.909c.455 0 .682-.243.682-.728V6.545h-2.301c.17.485.255.97.255 1.455 0 1.212-.397 2.242-1.193 3.09-.795.85-1.761 1.274-2.898 1.274-1.136 0-2.102-.425-2.897-1.273C4.619 10.242 4.222 9.212 4.222 8c0-.485.085-.97.255-1.455h-2.3z" fill="#C8CDD8"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="9" height="16" fill="none">
+                                    <path d="M6.453 3.05h1.922V0H6.101C3.36.125 2.797 1.775 2.75 3.5v1.525H.875V8H2.75v8h2.813V8h2.32l.445-2.975H5.563V4.1c-.008-.132.01-.264.05-.388.04-.125.105-.239.188-.337a.935.935 0 01.295-.233.881.881 0 01.357-.092z" fill="#C8CDD8"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <h1 class="header__title">Самый шикарный курительный клуб Урала</h1>
+                <div class="contacts contacts_header">
+                    <div class="contacts__item">
+                        <i class="las la-phone contacts__img"></i>
+                        <div class="contacts__descr">+7 (343) 298-98-88</div>
+                    </div>
+                    <div class="contacts__item">
+                        <i class="las la-clock contacts__img"></i>
+                        <div class="contacts__descr">
+                            вс-чт с 16:00 до 00:00<br>
+                            пт-сб с 16:00 до 04:00
+                        </div>
+                        
+                    </div>
+                    <div class="contacts__item">
+                        <i class="las la-map-marker contacts__img"></i>
+                        <div class="contacts__descr">
+                            Екатеринбург,<br>
+                            БЦ Высоцкий, 50 этаж
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section class="tradition">
+        <div class="container">
+            <div class="tradition__wrapper">
+                <div class="tradition__promo">
+                    <h2 class="title title_fs36">Возраждаем традицию</h2>
+                    <div class="tradition__text">
+                        Сигара в достойной компании, оттененная бокалом бренди, всегда была не 
+                        только обязательным атрибутом джентльмена, но и данью традициям. Поклонники 
+                        сигар встречались в курительных клубах, обсуждали последние новости и вершили судьбы 
+                        мира. Прошло время, и теперь традицию курительных клубов возрождает «Дым кудрявый» 
+                        в Екатеринбурге.
+                    </div>
+                </div>
+                <img src="img/tradition/hookah.png" alt="" class="tradition__img">
+                <div class="tradition__item tradition__item_1">
+                    <h3 class="title">Услуги</h3>
+                    <div class="tradition__descr">
+                        Серьезная сигарная карта и достойный выбор кальянов – standart, premium или de luxe.
+                        Всегда в наличии элитный алкоголь, который составляет отличную партию сигарам. Всем,
+                        кто за рулем бармен предложит авторский чай.
+                    </div>
+                </div>
+                <div class="tradition__item tradition__item_2">
+                    <h3 class="title">Развлечения</h3>
+                    <div class="tradition__descr">
+                        В клубе «Дым кудрявый» установлены плазменные панели, на которых можно посмотреть 
+                        спортивный матч. Также в гостевом зале вы найдете шахматы и шашки, в том числе 
+                        интересные авторские коллекции.
+                    </div>
+                </div>
+                <div class="tradition__item tradition__item_3">
+                    <h3 class="title">Для кого</h3>
+                    <div class="tradition__descr">
+                        Курительный клуб №1 «Дым кудрявый» создан для деловых и неформальных встреч.
+                        В отличии от традиционных английских курительных клубов, заведение
+                        в Екатеринбурге ждет и джентльменов, и леди.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interior">
+        <div class="container">
+            <div class="slider-title">
+                <h2 class="title title_fs36 title_white">Интерьер</h2>
+                <div class="arrows">
+                    <div class="prev-1 arrow"></div>
+                    <div class="next-1 arrow"></div>
+                </div>
+            </div>
+            <div class="slider slider-1">
+                <div class="slider__img"><img src="img/interior/slider/1.jpg" alt="Слайд 1"></div>
+                <div class="slider__img"><img src="img/interior/slider/2.jpg" alt="Слайд 2"></div>
+                <div class="slider__img"><img src="img/interior/slider/3.jpg" alt="Слайд 3"></div>
+                <div class="slider__img"><img src="img/interior/slider/4.jpg" alt="Слайд 4"></div>
+                <div class="slider__img"><img src="img/interior/slider/1.jpg" alt="Слайд 5"></div>
+                <div class="slider__img"><img src="img/interior/slider/2.jpg" alt="Слайд 6"></div>
+                <div class="slider__img"><img src="img/interior/slider/3.jpg" alt="Слайд 7"></div>
+                <div class="slider__img"><img src="img/interior/slider/4.jpg" alt="Слайд 8"></div>
+            </div>
+        </div>
+    </section>
+    <section class="menu-company">
+        <div class="container">
+            <div class="menu-company__wrapper">
+                <div class="menu-company__text">
+                    <h2 class="title title_fs36">Меню</h2>
+                
+                    <ul class="tabs">
+                        <li class="tab tab_active">Фирменные кальяны</li>
+                        <li class="tab">Сигары и сигарилы</li>
+                        <li class="tab">Классические кальяны</li>
+                    </ul>
+                </div>
+                <img src="img/menu-company/img.png" alt="Картинка" class="menu-company__img">
+            </div>
+            <div class="menu-company__content menu-company__content_active">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Баунти»</div>
+                        <div class="card__price">3000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> шоколад, молоко, кокосовый сироп</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Мохито»</div>
+                        <div class="card__price">3000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> мята, лайм, белый ром и много-много льда</div>
+                        <div class="card__descr"><span>Чаша на выбор:</span> яблоко, апельсин, грейпфрут</div>
+                        <div class="card__descr"><span>Крепость:</span> крепкий</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Пина колада»</div>
+                        <div class="card__price">3000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> молоко, ананасовый сок, кокосовый сироп, лед</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-company__content">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Баунти»</div>
+                        <div class="card__price">30000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> шоколад, молоко, кокосовый сироп</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Мохито»</div>
+                        <div class="card__price">30000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> мята, лайм, белый ром и много-много льда</div>
+                        <div class="card__descr"><span>Чаша на выбор:</span> яблоко, апельсин, грейпфрут</div>
+                        <div class="card__descr"><span>Крепость:</span> крепкий</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Пина колада»</div>
+                        <div class="card__price">30000 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> молоко, ананасовый сок, кокосовый сироп, лед</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-company__content">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Баунти»</div>
+                        <div class="card__price">777 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> шоколад, молоко, кокосовый сироп</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                        <div class="card__descr"><span>Добавки:</span> шоколад, молоко, кокосовый сироп</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Мохито»</div>
+                        <div class="card__price">777 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> мята, лайм, белый ром и много-много льда</div>
+                        <div class="card__descr"><span>Чаша на выбор:</span> яблоко, апельсин, грейпфрут</div>
+                        <div class="card__descr"><span>Крепость:</span> крепкий</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__title">«Пина колада»</div>
+                        <div class="card__price">777 ₽</div>
+                    </div>
+                    <div class="card__text">
+                        <div class="card__descr"><span>Добавки:</span> молоко, ананасовый сок, кокосовый сироп, лед</div>
+                        <div class="card__descr"><span>Чаша:</span> ананас</div>
+                        <div class="card__descr"><span>Крепость:</span> средняя</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__card">
+                <h2 class="title title_fs36 title_white">У нас уютно</h2>
+                <img src="img/advantages/list.svg" alt="Лист" class="advantages__img">
+                <ul class="advantages__list">
+                    <li class="advantages__item">Шикарный вид на город с 50-го этажа БЦ «Высоцкий»</li>
+                    <li class="advantages__item">Авторские миксы, которые меняются каждый месяц
+                                                и способны удовлетворить каждого требовательного гостя</li>
+                    <li class="advantages__item">Уникальная атмосфера уединения и комфорта</li>
+                    <li class="advantages__item">Персонал — подготовленные мастера своего дела</li>
+                </ul>
+            </div>
+        </div>
+        <img src="img/advantages/bg.jpg" alt="" class="advantages__bg">
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="slider-title">
+                <h2 class="title title_fs36">Новости</h2>
+                <div class="arrows">
+                    <div class="prev-2 arrow arrow_dark"></div>
+                    <div class="next-2 arrow arrow_dark"></div>
+                </div>
+            </div>
+            <div class="slider slider-2">
+                <div class="slider__img">
+                    <img src="img/news/slider/1.jpg" alt="Слайд 1">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/2.jpg" alt="Слайд 2">
+                    <div class="news__date">24 марта</div>
+                    <div class="news__descr">Дорогие гости, по выходным наш курительный клуб работает до 4 утра</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/3.jpg" alt="Слайд 3">
+                    <div class="news__date">12 марта</div>
+                    <div class="news__descr">Готовимся к вечеру с сигарами Davidoff</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/1.jpg" alt="Слайд 4">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/2.jpg" alt="Слайд 5">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/3.jpg" alt="Слайд 6">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/1.jpg" alt="Слайд 7">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+                <div class="slider__img">
+                    <img src="img/news/slider/2.jpg" alt="Слайд 8">
+                    <div class="news__date">8 апреля</div>
+                    <div class="news__descr">Наш курительный клуб ежедневно работает с 16:00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__text">
+                <h2 class="promo__title">Наш клуб входит в состав ресторана Panorama ASP</h2>
+                <div class="promo__descr">Поэтому гости могут не только насладиться дымным, но и попробовать самые разнообразные коктейли, а также вкусно поесть</div>
+            </div>
+            <form action="#" method="GET">
+                <button type="submit" class="btn_promo">Подробнее о ресторане ⟶</button>
+            </form>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <div class="footer__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afa30fa3e9118b07c854db2f44e5563b03ee232f76f666892cd81dfab2731b83d&amp;source=constructor"></iframe>
+        </div>
+        <div class="footer__card">
+            <h2 class="title title_fs36">Контакты</h2>
+            <img src="img/footer/lighter.svg" alt="" class="footer__img">
+            <div class="contacts contacts_footer">
+                <div class="contacts__item">
+                    <i class="las la-phone contacts__img contacts__img_dark"></i>
+                    <div class="contacts__descr">+7 (343) 298-98-88</div>
+                </div>
+                <div class="contacts__item">
+                    <i class="las la-map-marker contacts__img contacts__img_dark"></i>
+                    <div class="contacts__descr">
+                        Екатеринбург,<br>
+                        БЦ Высоцкий, 50 этаж
+                    </div>
+                </div>
+                <div class="contacts__item">
+                    <i class="las la-clock contacts__img contacts__img_dark"></i>
+                    <div class="contacts__descr">
+                        вс-чт с 16:00 до 00:00<br>
+                        пт-сб с 16:00 до 04:00
+                    </div>
+                </div>
+            </div>
+            <div class="footer__btns">
+                <form action="#" method="GET">
+                    <button type="submit" class="btn_footer"><i class="lab la-facebook-f"></i>Facebook</button>
+                </form>
+                <form action="#" method="GET">
+                    <button type="submit" class="btn_footer"><i class="lab la-instagram"></i>Instagram</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="slider/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
